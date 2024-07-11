@@ -1,0 +1,399 @@
+% City facts
+city(cape_town). city(rio_de_janeiro). city(chefchaouen). 
+city(buenos_aires). city(bergen). city(cappadocia). city(banff). 
+city(petra). city(new_york). city(paris). city(cairo).
+city(auckland). city(marrakech). city(prague).
+city(vancouver). city(istanbul).  city(seoul).
+city(amsterdam). city(tokyo).
+
+% City facts
+city(cape_town, _, _, _, _).
+city(rio_de_janeiro, _, _, _, _).
+city(chefchaouen, _, _, _, _).
+city(buenos_aires, _, _, _, _).
+city(bergen, _, _, _, _).
+city(cappadocia, _, _, _, _).
+city(banff, _, _, _, _).
+city(petra, _, _, _, _).
+city(amsterdam, _, _, _, _).
+city(tokyo, _, _, _, _).
+city(new_york, _, _, _, _).
+city(paris, _, _, _, _).
+city(cairo, _, _, _, _).
+city(auckland, _, _, _, _).
+city(marrakech, _, _, _, _).
+city(prague, _, _, _, _).
+city(istanbul, _, _, _, _).
+city(seoul, _, _, _, _).
+city(vancouver, _, _, _, _).
+
+
+% Attractions
+attraction(cape_town, 'table mountain', mountain). attraction(cape_town, 'robben island', island).
+attraction(rio_de_janeiro, 'christ the redeemer', mountain). attraction(rio_de_janeiro, 'sugarloaf mountain', mountain).
+attraction(chefchaouen, 'blue medina', city). attraction(chefchaouen, 'akchour waterfalls', waterfall).
+attraction(buenos_aires, 'tango show', cultural_show). attraction(buenos_aires, 'recoleta cemetery', cemetery).
+attraction(cappadocia, 'fairy chimneys', geological_formation). attraction(cappadocia, 'goreme open air museum', museum).
+attraction(banff, 'banff national park', park). attraction(banff, 'lake louise', lake).
+attraction(petra, 'al-khazneh', archaeological_site). attraction(petra, 'monastery', archaeological_site).
+attraction(bergen, 'bryggen wharf', historical_site). attraction(bergen, 'fl ibanen', mountain).
+attraction(amsterdam, 'anne frank house', museum). attraction(amsterdam, 'van gogh museum', museum).
+attraction(tokyo, 'tokyo tower', landmark). attraction(tokyo, 'senso-ji temple', temple).
+attraction(new_york, 'central park', park). attraction(new_york, 'statue of liberty', monument).
+attraction(paris, 'eiffel tower', landmark). attraction(paris, 'louvre museum', museum).
+attraction(cairo, 'pyramids of giza', archaeological_site). attraction(cairo, 'khan el-khalili', market).
+attraction(auckland, 'sky tower', tower). attraction(auckland, 'auckland museum', museum).
+attraction(marrakech, 'jardin majorelle', garden). attraction(marrakech, 'medina of marrakech', city).
+attraction(prague, 'prague castle', castle). attraction(prague, 'charles bridge', bridge).
+attraction(vancouver, 'stanley park', park). attraction(vancouver, 'capilano suspension bridge', bridge).
+attraction(istanbul, 'hagia sophia', museum). attraction(istanbul, 'blue mosque', mosque).
+attraction(seoul, 'gyeongbokgung palace', palace). attraction(seoul, 'namsan seoul tower', tower).
+
+
+% Climate
+climate(cape_town, mediterranean). climate(rio_de_janeiro, tropical). 
+climate(chefchaouen, mediterranean). climate(buenos_aires, humid_subtropical).
+climate(petra, desert). climate(bergen, oceanic).
+climate(cappadocia, continental). climate(banff, subarctic). 
+climate(amsterdam, oceanic). climate(tokyo, humid_subtropical).
+climate(new_york, humid_subtropical). climate(paris, oceanic).
+climate(cairo, desert). climate(auckland, oceanic).
+climate(marrakech, mediterranean). climate(prague, oceanic).
+climate(vancouver, oceanic). climate(istanbul, mediterranean).
+climate(seoul, humid_subtropical).
+
+% Cost of living index (1-100)
+cost_of_living(cape_town, 70). cost_of_living(rio_de_janeiro, 75).
+cost_of_living(chefchaouen, 50). cost_of_living(buenos_aires, 80).
+cost_of_living(cappadocia, 60). cost_of_living(banff, 75). 
+cost_of_living(petra, 50). cost_of_living(bergen, 70).
+cost_of_living(amsterdam, 80). cost_of_living(tokyo, 85).
+cost_of_living(new_york, 90). cost_of_living(paris, 85).
+cost_of_living(cairo, 60). cost_of_living(auckland, 80).
+cost_of_living(marrakech, 50). cost_of_living(prague, 70).
+cost_of_living(vancouver, 75). cost_of_living(istanbul, 65). 
+cost_of_living(seoul, 80).
+
+% Transportation
+transportation(cape_town, bus). transportation(rio_de_janeiro, metro).
+transportation(chefchaouen, taxi). transportation(buenos_aires, subway).
+transportation(cappadocia, bus). transportation(bergen, bus).
+transportation(banff, car). transportation(petra, on_foot).
+transportation(amsterdam, tram). transportation(tokyo, subway).
+transportation(new_york, subway). transportation(paris, metro). 
+transportation(cairo, metro). transportation(auckland, ferry). transportation(marrakech, taxi).
+transportation(prague, tram). transportation(vancouver, skytrain). 
+transportation(istanbul, ferry). transportation(seoul, subway).
+
+% Languages spoken
+language(cape_town, afrikaans). language(rio_de_janeiro, portuguese).
+language(chefchaouen, arabic). language(buenos_aires, spanish).
+language(cappadocia, turkish). language(banff, english).
+language(petra, arabic). language(bergen, norwegian).
+language(amsterdam, dutch). language(tokyo, japanese).
+language(new_york, english). language(paris, french).
+language(cairo, arabic). language(auckland, english).
+language(marrakech, arabic). language(prague, czech).
+language(vancouver, english). language(istanbul, turkish).
+language(seoul, korean).
+
+% Currency
+currency(cape_town, south_african_rand). currency(rio_de_janeiro, brazilian_real).
+currency(chefchaouen, moroccan_dirham). currency(buenos_aires, argentine_peso).
+currency(bergen, norwegian_krone). currency(cappadocia, turkish_lira). 
+currency(banff, canadian_dollar). currency(petra, jordanian_dinar).
+currency(amsterdam, euro). currency(tokyo, japanese_yen).
+currency(new_york, us_dollar). currency(paris, euro).
+currency(cairo, egyptian_pound). currency(auckland, new_zealand_dollar).
+currency(marrakech, moroccan_dirham). currency(prague, czech_koruna).
+currency(vancouver, canadian_dollar). currency(istanbul, turkish_lira).
+currency(seoul, south_korean_won).
+
+% Safety rating (1-10)
+safety_rating(cape_town, 9). safety_rating(rio_de_janeiro, 7).
+safety_rating(chefchaouen, 8). safety_rating(buenos_aires, 7).
+safety_rating(bergen, 8). safety_rating(cappadocia, 9).
+safety_rating(banff, 8). safety_rating(petra, 7).
+safety_rating(amsterdam, 8). safety_rating(tokyo, 9).
+safety_rating(new_york, 8). safety_rating(paris, 9).
+safety_rating(cairo, 7). safety_rating(auckland, 8).
+safety_rating(marrakech, 6). safety_rating(prague, 8).
+safety_rating(vancouver, 9). safety_rating(istanbul, 7).
+safety_rating(seoul, 8).
+
+% Common dishes
+dish(cape_town, bobotie). dish(rio_de_janeiro, feijoada).
+dish(chefchaouen, couscous). dish(buenos_aires, asado).
+dish(cappadocia, kebab). dish(banff, poutine). 
+dish(petra, mansaf). dish(bergen, fish_soup).
+dish(amsterdam, stroopwafels). dish(tokyo, sushi).
+dish(new_york, 'new york-style pizza'). dish(paris, 'croissant').
+dish(cairo, 'koshari'). dish(auckland, 'hangi').
+dish(marrakech, 'tagine'). dish(prague, 'svíčková').
+dish(vancouver, 'salmon candy'). dish(istanbul, 'kebab').
+dish(seoul, 'kimchi').
+
+% Budget range
+budget_range(cape_town, [low, medium]). 
+budget_range(rio_de_janeiro, [medium, high]).
+budget_range(chefchaouen, [low]).
+budget_range(buenos_aires, [medium, high]).
+budget_range(cappadocia, [medium]).
+budget_range(banff, [medium, high]). 
+budget_range(petra, [low, medium]).
+budget_range(bergen, [medium]).
+budget_range(amsterdam, [medium, high]). 
+budget_range(tokyo, [high]).
+budget_range(new_york, [high]). 
+budget_range(paris, [high]).
+budget_range(cairo, [low, medium]).
+budget_range(auckland, [medium, high]).
+budget_range(marrakech, [low]).
+budget_range(prague, [medium]).
+budget_range(vancouver, [medium, high]).
+budget_range(istanbul, [medium]).
+budget_range(seoul, [medium, high]).
+
+% Rule to print detailed information about a city
+print_city_info(City) :-
+    write('Details about '), write(City), write(':'), nl,
+    climate(City, CityClimate),
+    write('Climate: '), write(CityClimate), nl,
+    cost_of_living(City, CityCostOfLiving),
+    write('Cost of Living Index: '), write(CityCostOfLiving), nl,
+    safety_rating(City, CitySafetyRating),
+    write('Safety Rating: '), write(CitySafetyRating), nl,
+    transportation(City, CityTransportation),
+    write('Transportation: '), write(CityTransportation), nl,
+    findall(Language, language(City, Language), Languages),
+    write('Languages Spoken: '), write(Languages), nl,
+    currency(City, CityCurrency),
+    write('Currency: '), write(CityCurrency), nl,
+    budget_range(City, CityBudgetRange),
+    write('Budget Range: '), write(CityBudgetRange), nl,
+    findall(Dish, dish(City, Dish), Dishes),
+    write('Common Dishes: '), write(Dishes), nl,
+    nl.
+
+% Rule to ask user preferences and recommend a city
+ask_user_preferences(RecommendedCity, RecommendedAttractions) :-
+    write('Welcome to the City Recommendation System!'), nl,
+    repeat,
+    ask_budget(Budget),
+    ask_climate(Climate),
+    ask_safety_rating(SafetyRating),
+    ask_transportation(Transportation),
+    ask_cost_of_living(CostOfLiving),
+    ask_attractions(Attractions),
+    
+    % Find all cities that meet most preferences
+    findall((City, CityAttractions), recommend_city(City, Budget, Climate, SafetyRating, Transportation, CostOfLiving, Attractions, CityAttractions), CityAttractionsList),
+    
+    % If there are matching cities, randomly choose one
+    (CityAttractionsList \== [] ->
+        random_member((RecommendedCity, RecommendedAttractions), CityAttractionsList),
+        write('Based on your preferences, we recommend visiting '), write(RecommendedCity), write('.'), nl,
+        write('Attractions in '), write(RecommendedCity), write(': '), write(RecommendedAttractions), nl
+    ;
+        % If no matching city is found, recommend attractions of cities with similar attraction types
+        write('Sorry, we couldn\'t find a city that matches all your preferences. Recommending attractions of cities with similar attraction types.'), nl,
+        recommend_similar_attractions(Attractions, RecommendedCity, RecommendedAttractions)
+    ),
+    
+    % Ask the user if they want to exit or start again
+    nl, write('Enter 0 to exit or 1 to start again: '), read_line_to_codes(user_input, UserChoice),
+    (UserChoice = [48] -> % User entered '0'
+        ! % Exit the loop
+    ;
+        UserChoice = [49] -> % User entered '1'
+        fail % Continue the loop to ask preferences again
+    ;
+        write('Invalid input. Exiting...'), nl,
+        ! % Exit the loop
+    ).
+
+
+% Rule to recommend attractions of cities with similar attraction types
+recommend_similar_attractions(UserCategories, RecommendedCity, RecommendedAttractions) :-
+    findall((City, Attractions), (
+        city(City),
+        attraction(City, _, Category),
+        member(Category, UserCategories),
+        findall(Attraction, attraction(City, Attraction, Category), Attractions)
+    ), CityAttractionsList),
+    % If there are matching cities, randomly choose one
+    (CityAttractionsList \== [] ->
+        random_member((RecommendedCity, RecommendedAttractions), CityAttractionsList),
+        write('Based on your preferences, we recommend visiting attractions of '), write(RecommendedCity), write('.'), nl,
+        write('Attractions in '), write(RecommendedCity), write(': '), write(RecommendedAttractions), nl,
+        % Print all attractions for the recommended city
+        findall(Attraction, attraction(RecommendedCity, Attraction, _), AllAttractions),
+        length(AllAttractions, NumAllAttractions),
+        (NumAllAttractions > 0 ->
+            write('All attractions in '), write(RecommendedCity), write(': '), write(AllAttractions), nl
+        ;
+            true % No attractions for the recommended city, do nothing
+        ),
+        % Print detailed information about the recommended city
+        print_city_info(RecommendedCity)
+    ;
+        % If no matching city is found, inform the user
+        write('Sorry, we couldn\'t find cities with attractions similar to your preferences. Try relaxing some criteria.'), nl
+    ).
+
+
+% Rule to ask user about budget with input validation
+ask_budget(Budget) :-
+    write('What is your budget range? (low, medium, high): '), 
+    read_line_to_string(user_input, BudgetString),
+    validate_budget(BudgetString, Budget).
+
+validate_budget(BudgetString, Budget) :-
+    (member(BudgetString, ["low", "medium", "high"]) ->
+        atom_string(Budget, BudgetString)
+    ;
+        write('Invalid input. Please enter "low", "medium", or "high".'), nl,
+        ask_budget(Budget)
+    ).
+
+% Rule to ask user about climate with input validation
+ask_climate(Climate) :-
+    write('What climate do you prefer? (mediterranean, tropical, continental, subarctic, desert, oceanic, humid_subtropical): '), 
+    read_line_to_string(user_input, ClimateString),
+    validate_climate(ClimateString, Climate).
+
+validate_climate(ClimateString, Climate) :-
+    (member(ClimateString, ["mediterranean", "tropical", "continental", "subarctic", "desert", "oceanic", "humid_subtropical"]) ->
+        atom_string(Climate, ClimateString)
+    ;
+        write('Invalid input. Please enter a valid climate type.'), nl,
+        ask_climate(Climate)
+    ).
+
+% Similar input validation can be added for other user preferences like safety rating, transportation, cost of living, and attraction categories.
+% Rule to ask user about safety rating with input validation
+ask_safety_rating(SafetyRating) :-
+    write('On a scale of 1 to 10, what is your preferred safety rating? '), 
+    read_line_to_string(user_input, SafetyRatingString),
+    (valid_safety_rating(SafetyRatingString, SafetyRating) ->
+        true
+    ;
+        write('Invalid input. Please enter a valid safety rating.'), nl,
+        ask_safety_rating(SafetyRating)
+    ).
+
+valid_safety_rating(SafetyRatingString, SafetyRating) :-
+    atom_number(SafetyRatingString, SafetyRating),
+    SafetyRating >= 1,
+    SafetyRating =< 10.
+
+
+% Rule to ask user about transportation with input validation
+ask_transportation(Transportation) :-
+    write('What mode of transportation do you prefer? (bus, metro, taxi, subway, car, on_foot, tram, ferry, skytrain, minibus_taxi): '), 
+    read_line_to_string(user_input, TransportationString),
+    validate_transportation(TransportationString, Transportation).
+
+validate_transportation(TransportationString, Transportation) :-
+    member(TransportationString, ["bus", "metro", "taxi", "subway", "car", "on_foot", "tram", "ferry", "skytrain", "minibus_taxi"]),
+    atom_string(Transportation, TransportationString),
+    !.
+validate_transportation(_, _) :-
+    write('Invalid input. Please enter a valid mode of transportation.'), nl,
+    ask_transportation(Transportation).
+
+% Rule to ask user about cost of living with input validation
+ask_cost_of_living(CostOfLiving) :-
+    write('What cost of living index are you comfortable with? (1-100): '), 
+    read_line_to_string(user_input, CostOfLivingString),
+    (valid_cost_of_living(CostOfLivingString, CostOfLiving) ->
+        true
+    ;
+        write('Invalid input. Please enter a valid cost of living index.'), nl,
+        ask_cost_of_living(CostOfLiving)
+    ).
+
+valid_cost_of_living(CostOfLivingString, CostOfLiving) :-
+    atom_number(CostOfLivingString, CostOfLiving),
+    CostOfLiving >= 1,
+    CostOfLiving =< 100.
+.
+
+% Rule to ask user about attraction categories with input validation
+% Rule to ask user about attraction categories with input validation
+ask_attractions(Categories) :-
+    write('What type of attraction do you prefer? (e.g., lake, mountain, museum, island, city, waterfall, cultural_show, cemetery, park, geological_formation, archaeological_site, landmark, temple, monument, market, tower, garden, castle, bridge, mosque, palace): '), 
+    read_line_to_string(user_input, CategoriesString),
+    validate_attractions(CategoriesString, Categories).
+
+validate_attractions(CategoriesString, Categories) :-
+    split_string(CategoriesString, ",", " ", CategoriesList),
+    (valid_attractions(CategoriesList, ValidCategories) ->
+        maplist(atom_string, Categories, ValidCategories)
+    ;
+        write('Invalid input. Please enter valid attraction categories.'), nl,
+        ask_attractions(Categories)
+    ).
+
+% Helper rule to check if all attraction categories are valid
+valid_attractions([], []).
+valid_attractions([Category | Rest], [Category | ValidRest]) :-
+    valid_attraction(Category),
+    valid_attractions(Rest, ValidRest).
+
+% Helper rule to check if a single attraction category is valid
+valid_attraction(Category) :-
+    member(Category, ["lake", "mountain", "museum", "island", "city", "waterfall", "cultural_show", "cemetery", "park", "geological_formation", "archaeological_site", "landmark", "temple", "monument", "market", "tower", "garden", "castle", "bridge", "mosque", "palace"]).
+
+
+
+% Rule to recommend a city based on user preferences
+recommend_city(City, Budget, Climate, SafetyRating, Transportation, CostOfLiving, UserCategories, Attractions) :-
+    budget_range(City, BudgetRanges),
+    member(Budget, BudgetRanges),
+    climate(City, Climate),
+    safety_rating(City, CitySafetyRating),
+    CitySafetyRating >= 1,
+    CitySafetyRating =< 10,
+    CitySafetyRating >= SafetyRating,
+
+    transportation(City, Transportation),
+    cost_of_living(City, CostOfLivingIndex),
+    CostOfLivingIndex =< CostOfLiving,
+    
+    % Check if the city satisfies user categories
+    satisfies_categories(City, UserCategories, MatchingCategories),
+    
+    % Return the attractions for the matching city
+    findall(MatchingAttraction, (
+        attraction(City, MatchingAttraction, MatchingCategory),
+        member(MatchingCategory, MatchingCategories)
+    ), MatchingAttractions),
+    length(MatchingAttractions, NumMatchingAttractions),
+    
+    % Print matching attractions
+    (NumMatchingAttractions > 0 ->
+        write('Attractions in '), write(City), write(' matching your preferences: '), write(MatchingAttractions), nl
+    ;
+        true % No matching attractions, do nothing
+    ),
+    
+    % Return all attractions for the city
+    findall(Attraction, attraction(City, Attraction, _), Attractions),
+    length(Attractions, NumAttractions),
+    
+    % Print all attractions for the city
+    (NumAttractions > 0 ->
+        write('All attractions in '), write(City), write(': '), write(Attractions), nl
+    ;
+        true % No attractions for the city, do nothing
+    ),
+    
+    % Print detailed information about the city
+    print_city_info(City).
+
+
+% Rule to check if a city satisfies user's attraction preferences
+satisfies_categories(City, UserCategories, CommonCategories) :- 
+    findall(Category, attraction(City, _, Category), CityCategories),
+    intersection(UserCategories, CityCategories, CommonCategories).
